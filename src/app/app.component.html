@@ -1,0 +1,11 @@
+<form [formGroup]="tipoNormativoForm">
+  <label>Peso Normativo</label>
+  <input type="number" formControlName="pesoNormativo" />
+  <br />
+  <label>Peso Não Normativo</label>
+  <input type="number" formControlName="pesoNaoNormativo" />
+  <small></small>
+  <br />
+  <button type="submit" (click)="initializeForm()">Limpar</button>
+  <button type="submit" (click)="validationForm()">Salvar</button>
+</form>
